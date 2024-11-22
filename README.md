@@ -15,7 +15,8 @@ Este projeto é um site interativo que apresenta informações sobre mods popula
 
 1. **Dragon Block**  
    Traga o universo de Dragon Ball para o Minecraft! Lute contra vilões, desbloqueie transformações e use poderes incríveis como o Kamehameha.  
-   ![Imagem do mod Dragon Block](./imagens/dragon_block.jpg)
+   ![Imagem do mod Dragon Block](./imagens/dragon_block.jpg)![journey_map](https://github.com/user-attachments/assets/7b8624a5-cf26-4e51-8a82-f15599f49783)
+
 
 2. **Custom NPC's**  
    Crie NPCs personalizados para missões, histórias ou interações no jogo.  
