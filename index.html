@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Mods de Minecraft</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="white" />
 </head>
+
 <body>
-    <p>12345</p>
+
+    <header>
+        <nav class="banner">
+            <!-- Botão hambúrguer -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#dragon-block">Dragon Block</a></li>
+                <li><a href="#custom-npcs">Custom NPC's</a></li>
+                <li><a href="#mine-mine-no-mi">Mine Mine no Mi</a></li>
+                <li><a href="#orespawn">Orespawn</a></li>
+                <li><a href="#more-player-models">More Player Models</a></li>
+                <li><a href="#journey-map">Journey Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Mods de Minecraft</h1>
+        <p>Descubra alguns dos mods mais incríveis para personalizar sua experiência no Minecraft!</p>
+
+        <h2 id="dragon-block">Dragon Block</h2>
+        <section class="card-container">
+            <div class="card">
+                <img src="./images/dragon_block.jpg" alt="Dragon Block" width="100">
+                <h3>Dragon Block</h3>
+                <p>Traga o universo de Dragon Ball para o Minecraft! Lute contra vilões, desbloqueie transformações e use poderes incríveis como o Kamehameha.</p>
+            </div>
+        </section>
+
+        <h2 id="custom-npcs">Custom NPC's</h2>
+        <section class="card-container">
+            <div class="card">
+                <img src="./images/custom_npcs.jpg" alt="Custom NPC's" width="100">
+                <h3>Custom NPC's</h3>
+                <p>Crie e personalize NPCs no jogo para dar mais vida às suas aventuras. Ideal para mapas de RPG!</p>
+            </div>
+        </section>
+
+        <h2 id="mine-mine-no-mi">Mine Mine no Mi</h2>
+        <section class="card-container">
+            <div class="card">
+                <img src="./images/mine_mine_no_mi.jpg" alt="Mine Mine no Mi" width="100">
+                <h3>Mine Mine no Mi</h3>
+                <p>Inspirado no universo de One Piece, este mod permite que você encontre frutas do diabo, entre em tripulações piratas e explore os mares.</p>
+            </div>
+        </section>
+
+        <h2 id="orespawn">Orespawn</h2>
+        <section class="card-container">
+            <div class="card">
+                <img src="./images/orespawn.jpg" alt="Orespawn" width="100">
+                <h3>Orespawn</h3>
+                <p>Adicione novas criaturas, armas, dimensões e aventuras épicas ao jogo. Enfrente o terrível Rei Dragão e outros chefes lendários!</p>
+            </div>
+        </section>
+
+        <h2 id="more-player-models">More Player Models</h2>
+        <section class="card-container">
+            <div class="card">
+                <img src="./images/more_player_models.jpg" alt="More Player Models" width="100">
+                <h3>More Player Models</h3>
+                <p>Personalize seu personagem com diferentes modelos e animações. Transforme-se em criaturas ou crie um avatar único!</p>
+            </div>
+        </section>
+
+        <h2 id="journey-map">Journey Map</h2>
+        <section class="card-container">
+            <div class="card">
+                <img src="./images/journey_map.jpg" alt="Journey Map" width="100">
+                <h3>Journey Map</h3>
+                <p>Não se perca mais! Use um mapa dinâmico que mostra todos os biomas e estruturas ao seu redor.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="rodape">
+        <p>Mods incríveis para transformar o Minecraft em uma nova experiência!</p>
+    </footer>
+
 </body>
+<script src="/js/main.js"></script>
+
 </html>
