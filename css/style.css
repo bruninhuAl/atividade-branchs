@@ -1,0 +1,213 @@
+:root {
+    --background-dark: rgb(73, 72, 72);
+    --background-light: rgb(255, 216, 216);
+    --banner-color: rgb(204, 182, 241);
+    --text-color-dark: #333;
+    --text-color-light: #ddd;
+    --card-background: #fff;
+    --footer-background: rgb(181, 103, 103);
+    --hover-bg: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding-left: 25px;
+    background-color: var(--background-dark);
+    color: var(--text-color-light);
+    margin: 0;
+}
+
+header{
+    margin-top: 155px;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--banner-color);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-color-dark);
+    z-index: 100;
+}
+
+.container {
+    font-size: 25px;
+    min-height: 100px;
+    text-align: center;
+    background-color: #333;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    margin: auto;
+    word-spacing: 5px;
+    margin-top: 85px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: var(--banner-color);
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: var(--text-color-dark);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: var(--hover-bg);
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--text-color-dark);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu a {
+        font-size: 1.1em;
+        padding: 8px 12px;
+    }
+
+    .banner {
+        font-size: 2em;
+        height: 120px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card img {
+        width: 180px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+
+    .corpo {
+        padding: 15px 25px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        width: 150px;
+        height: 140px;
+    }
+}
+
+.corpo {
+    min-height: 400px;
+    padding: 25px 75px;
+    background-color: antiquewhite;
+    margin: auto;
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aquamarine;
+    background-color: var(--footer-background);
+    font-size: 20px;
+}
+
+.card-container {
+    display: flex;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+   
+}
+
+.card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card img {
+    width: 230px;
+    height: 200px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--text-color-dark);
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0 10px 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card input {
+    display: none;
+}
+
+.card label {
+    display: block;
+}
+
+.card label:hover {
+    transform: scale(1.1);
+}
+
+/* Sombreamento e animação com várias sombras */
+.card {
+    box-shadow: 
+        -5px 5px 10px rgba(0, 255, 60, 0.9), 
+        5px 5px 10px rgba(255, 0, 0, 0.5), 
+        -5px -5px 10px rgba(255, 255, 0, 0.868),
+        5px -5px 10px rgba(0, 0, 255, 0.5);
+}
